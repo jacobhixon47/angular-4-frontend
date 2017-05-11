@@ -1,0 +1,126 @@
+/* You can add global styles to this file, and also import other style files */
+
+$light-blue : #67B0F9;
+$pale-blue : #A0C7E8;
+$white : #F8F8F8;
+$dark-grey : #626E72;
+$mint : #66FFD1;
+$light-grey : #D8D9D9;
+$pop-orange : #F17E76;
+$roboto : 'Roboto', sans-serif;
+
+html {
+  font-family: $roboto;
+  font-weight: 100;
+  color: $white;
+}
+
+.mint-bg {
+  background-color: $mint;
+  color: $white;
+}
+.pop-orange-bg {
+  background-color: $pop-orange;
+  color: $white;
+}
+
+.my-button {
+  background-color: transparent;
+  border: 3px $white solid;
+  color: $white;
+}
+
+.hero-blue {
+  .header-light {
+    font-size: 200%;
+    color: $white;
+  }
+  height: 100vh;
+  background-color: darken($light-blue, 10%);
+  font-size: 3em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  width: 100%;
+  position: fixed;
+  z-index: 101;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: darken($light-blue, 10%);
+  height: 10vh;
+  border-bottom: 1px $white solid;
+  a {
+    -webkit-animation-duration: 2s;
+    color: $white;
+    font-size: 150%;
+    &:hover {
+      text-decoration: none;
+      font-weight: 200;
+      font-size: 165%;
+    }
+  }
+}
+
+.flex-row {
+  display: flex;
+}
+
+.footer {
+  background-color: darken($dark-grey, 10%);
+  height: 275px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  color: $white;
+  text-align: center;
+  padding: 3% 10% 3% 10%;
+  .footer-service-links, .footer-social-links {
+    text-align: left;
+    a {
+      color: $white;
+    }
+  }
+  .footer-payment-links {
+    text-align: right;
+    a {
+      color: $white;
+    }
+  }
+}
+
+.main-container {
+  position: relative;
+  z-index: 100;
+  margin-bottom: 275px;
+  overflow: hidden;
+}
+
+.footer-form {
+  text-align: left;
+  .footer-input {
+    color: $white;
+    padding: 1%;
+    background-color: inherit;
+    font-size: 1.5em;
+    width: 100%;
+    border: none;
+    border: 1px $white solid;
+  }
+}
+
+.no-top-margin {
+  margin-top: 0px;
+}
+
+.top-footer-row {
+  height: 50%;
+}
+.bottom-footer-row {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
