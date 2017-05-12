@@ -66,19 +66,20 @@ html {
   align-items: center;
   justify-content: center;
   height: 10vh;
+  background-color: transparent;
   .nav-item {
     flex-grow: 1;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $light-brown;
     &:hover {
-      background-color: $white;
+      background-color: darken($light-brown, 10%);
+      -webkit-transition-duration: .5s;
+      transition-duration: .5s;
       a {
-        color: $light-brown;
+        color: $white;
         text-decoration: none;
-        font-weight: 200;
         cursor: pointer;
       }
     }
@@ -150,4 +151,8 @@ html {
 .bottom-footer-row {
   padding-top: 7%;
   padding-bottom: 7%;
+}
+
+.solidNav {
+  background-color: $light-brown;
 }
