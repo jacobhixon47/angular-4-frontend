@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-$light-blue : #67B0F9;
-$pale-blue : #A0C7E8;
-$white : #F8F8F8;
-$dark-grey : #626E72;
-$mint : #66FFD1;
-$light-grey : #D8D9D9;
+$blue : #4D7188;
+$white : #F2EDE4;
+$black : #22231C;
+$green : #417E74;
+$light-brown : #CFA473;
+
 $pop-orange : #F17E76;
 $roboto : 'Roboto', sans-serif;
 
@@ -15,32 +15,46 @@ html {
   color: $white;
 }
 
-.mint-bg {
-  background-color: $mint;
-  color: $white;
-}
-.pop-orange-bg {
-  background-color: $pop-orange;
-  color: $white;
-}
-
 .my-button {
   background-color: transparent;
-  border: 3px $white solid;
   color: $white;
+  font-size: 0.6em;
 }
 
-.hero-blue {
+.my-hero {
   .header-light {
     font-size: 200%;
-    color: $white;
+    color: $blue;
   }
   height: 100vh;
-  background-color: darken($light-blue, 10%);
+  background-color: $white;
   font-size: 3em;
   text-align: center;
   display: flex;
   align-items: center;
+  padding-bottom: 20vh;
+}
+
+.home-hero-top {
+  background: url('assets/images/beach-getaway.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blue-ghost-button {
+  color: $blue;
+  font-weight: 200;
+  border: 3px $blue solid;
+  border-radius: 500px;
+  padding: 10px 35px 10px;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+  -webkit-transition-duration: .5s; /* Safari */
+  transition-duration: .5s;
 }
 
 .nav-menu {
@@ -50,9 +64,9 @@ html {
   text-align: center;
   display: flex;
   align-items: center;
-  background-color: darken($light-blue, 10%);
+  background-color: $light-brown;
   height: 10vh;
-  border-bottom: 1px $white solid;
+  // border-bottom: 2px $white solid;
   a {
     -webkit-animation-duration: 2s;
     color: $white;
@@ -70,7 +84,7 @@ html {
 }
 
 .footer {
-  background-color: darken($dark-grey, 10%);
+  background-color: $black;
   height: 275px;
   width: 100%;
   position: fixed;
