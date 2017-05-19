@@ -19,7 +19,7 @@ export class AppComponent {
   @HostListener("window:scroll", [])
     isNavShown() {
       let number = this.document.body.scrollTop;
-      if (number < this.scrollPosition && number < 100) {
+      if (number < this.scrollPosition && number < 75) {
         this.navIsSolid = false;
         this.navIsShown = true;
       } else if (number > this.scrollPosition) {
